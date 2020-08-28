@@ -1,7 +1,9 @@
 name: Auto approve
 
 on:
-  pull_request
+  pull_request:
+    paths:
+      - 'src/codeFile1.ps1'
 
 jobs:
   auto-approve:
