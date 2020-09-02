@@ -1,0 +1,15 @@
+name: Auto approve
+
+on:
+  pull_request:
+    paths:
+      - 'src/codeFile1.ps1'
+
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: hmarr/auto-approve-action@v2.0.0
+      if: github.actor == 'gnowleumas2'
+      with:
+        github-token: "${{ secrets.GITHUB_TOKEN }}"
