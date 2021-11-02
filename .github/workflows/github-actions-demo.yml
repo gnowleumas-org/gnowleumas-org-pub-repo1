@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-on: [push, workflow_dispatch]
+on: [push, pull_request, workflow_dispatch]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
