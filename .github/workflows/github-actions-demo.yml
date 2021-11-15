@@ -7,7 +7,7 @@ on:
     branches: [ master ]
   workflow_dispatch:
 jobs:
-  Explore-GitHub-Actions:
+  job1:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -23,3 +23,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "Run from main branch."
       - run: echo "Run from main branch 2."
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is job 2."
