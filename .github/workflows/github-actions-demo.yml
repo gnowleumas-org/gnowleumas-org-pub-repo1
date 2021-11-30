@@ -22,4 +22,4 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "Run from main branch."
-      - run: echo "This is feature 2."
+      - run: echo "This is feature 2.1"
